@@ -1,0 +1,18 @@
+﻿<Window x:Class="InformacioniSistem.Prozori.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InformacioniSistem.Prozori"
+        mc:Ignorable="d"
+        Title="Login" Height="167.784" Width="368.041">
+    <Grid>
+        <Label Content="Korisnik:" HorizontalAlignment="Left" Margin="56,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lozinka:" HorizontalAlignment="Left" Margin="56,62,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="126,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" AutomationProperties.Name="txtKorisnik"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="126,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" AutomationProperties.Name="txtLozinka"/>
+        <Button Content="Uloguj se" HorizontalAlignment="Left" Margin="66,107,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btnUlogujSe"/>
+        <Button Content="Otkaži" HorizontalAlignment="Left" Margin="227,107,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btnOtkazi" Click="Button_Click"/>
+
+    </Grid>
+</Window>

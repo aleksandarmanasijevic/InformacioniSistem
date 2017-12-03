@@ -1,0 +1,15 @@
+﻿<Window x:Class="InformacioniSistem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InformacioniSistem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Novi pacijent" HorizontalAlignment="Left" Margin="54,76,0,0" VerticalAlignment="Top" Width="132" AutomationProperties.Name="btnNoviPacijent" RenderTransformOrigin="-0.906,0.387" Click="Button_Click"/>
+        <Button Content="Novi pregled" HorizontalAlignment="Left" Margin="54,121,0,0" VerticalAlignment="Top" Width="132" AutomationProperties.Name="btnNoviPregled" Click="Button_Click_1"/>
+        <Button Content="Pregled kartona" HorizontalAlignment="Left" Margin="54,172,0,0" VerticalAlignment="Top" Width="132" AutomationProperties.Name="btnPregledKartona"/>
+
+    </Grid>
+</Window>
