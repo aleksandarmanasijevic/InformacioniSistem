@@ -5,11 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InformacioniSistem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Informacioni Sistem " Height="435.387" Width="720.372">
     <Grid>
-        <Button Content="Novi pacijent" HorizontalAlignment="Left" Margin="54,76,0,0" VerticalAlignment="Top" Width="132" AutomationProperties.Name="btnNoviPacijent" RenderTransformOrigin="-0.906,0.387" Click="Button_Click"/>
-        <Button Content="Novi pregled" HorizontalAlignment="Left" Margin="54,121,0,0" VerticalAlignment="Top" Width="132" AutomationProperties.Name="btnNoviPregled" Click="Button_Click_1"/>
-        <Button Content="Pregled kartona" HorizontalAlignment="Left" Margin="54,172,0,0" VerticalAlignment="Top" Width="132" AutomationProperties.Name="btnPregledKartona"/>
 
+        <Button x:Name="btnNoviPacijent" Content="Novi pacijent" Margin="0,18,16,0" VerticalAlignment="Top" Click="btnNoviPacijent_Click" Height="27" HorizontalAlignment="Right" Width="109"/>
+        <Button x:Name="btnPregledKartona" Content="Pregled kartona" Margin="0,62,16,0" VerticalAlignment="Top"  Height="27" Click="btnPregledKartona_Click" HorizontalAlignment="Right" Width="109"/>
+        <Button x:Name="btnIzlaz" Content="Izlaz" Margin="0,163,16,0" VerticalAlignment="Top"  Height="27" Click="btnIzlaz_Click" HorizontalAlignment="Right" Width="114" RenderTransformOrigin="0.535,-0.148"/>
+        <DataGrid x:Name="dataGrid"  VerticalAlignment="Top" Margin="0,0,148,0" Height="190">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Ime"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Prezime"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="JMBG"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Telefon" HeaderStringFormat=""/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Mesto stanovanja"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Ulica i broj"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" FontWeight="Bold" Header="Alergija" HeaderStringFormat=""/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Datum rođenja"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Bračno stanje"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Pol"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Ime:" HorizontalAlignment="Left" Margin="7,206,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prezime:" HorizontalAlignment="Left" Margin="8,239,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.56,-1.765"/>
+        <Label Content="Datum rođenja:" HorizontalAlignment="Left" Margin="348,280,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mesto stanovanja:" HorizontalAlignment="Left" Margin="8,338,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ulica i broj:" HorizontalAlignment="Left" Margin="8,369,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.139,-2.286"/>
+        <Label Content="Bračno stanje:" HorizontalAlignment="Left" Margin="348,320,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefon:" HorizontalAlignment="Left" Margin="7,309,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.623,1.972" Width="65"/>
+        <Label Content="Pol:" HorizontalAlignment="Left" Margin="348,363,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.034,0.269"/>
+        <RadioButton Content="Muško" HorizontalAlignment="Left" Margin="456,369,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Žensko" HorizontalAlignment="Left" Margin="526,369,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="82,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtIme"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="82,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtPrezime"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="115,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtTelefon" RenderTransformOrigin="0.484,2.095"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="115,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtTelefon"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="115,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtMestoStanovanja"/>
+        <DatePicker HorizontalAlignment="Left" Margin="445,281,0,0" VerticalAlignment="Top" AutomationProperties.Name="dateDatumRodjenja" Width="194"/>
+        <ComboBox HorizontalAlignment="Left" Margin="445,323,0,0" VerticalAlignment="Top" Width="194">
+            <TabItem Content="Neoženjen/Neudata" Header="Neoženjen/Neudata"/>
+            <TabItem Content="Oženjen/Udata" Header="Oženjen/Udata"/>
+            <TabItem Content="Udovac/Udovica" Header="Udovac/Udovica"/>
+            <TabItem Content="Razveden/Razvedena" Header="Razveden/Razvedena"/>
+        </ComboBox>
+        <Label x:Name="label" Content="JMBG:" HorizontalAlignment="Left" Margin="8,275,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtJMBG" HorizontalAlignment="Left" Height="23" Margin="82,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
+        <Label x:Name="label1" Content="Alergija na:" HorizontalAlignment="Left" Margin="348,213,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtAlergija" HorizontalAlignment="Left" Height="52" Margin="445,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251"/>
     </Grid>
 </Window>

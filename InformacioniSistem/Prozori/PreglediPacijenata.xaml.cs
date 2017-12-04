@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using InformacioniSistem.Prozori;
-namespace InformacioniSistem
+
+namespace InformacioniSistem.Prozori
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Pregledi.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Pregledi : Window
     {
-        public MainWindow()
+        public Pregledi()
         {
             InitializeComponent();
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -32,15 +31,14 @@ namespace InformacioniSistem
             np.ShowDialog();
         }
 
-        private void btnPregledKartona_Click(object sender, RoutedEventArgs e)
+        private void btnNoviPregled_Click(object sender, RoutedEventArgs e)
         {
-            Pregledi p = new Pregledi();
-            p.ShowDialog();
+
         }
 
-        private void btnIzlaz_Click(object sender, RoutedEventArgs e)
+        private void btnOtkazi_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown(); 
+            this.Close();
         }
     }
 }

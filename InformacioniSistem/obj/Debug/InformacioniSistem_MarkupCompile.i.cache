@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-c:\users\strahinja\source\repos\InformacioniSistem\InformacioniSistem\obj\Debug\
+I:\Programiranje\Projekti\InformacioniSistem\InformacioniSistem\obj\Debug\
 InformacioniSistem
 none
 false
 DEBUG;TRACE
-c:\users\strahinja\source\repos\InformacioniSistem\InformacioniSistem\App.xaml
-3-293603227
+I:\Programiranje\Projekti\InformacioniSistem\InformacioniSistem\App.xaml
+5720333163
 
-11-745246028
+181779030318
 131569487696
-MainWindow.xaml;Prozori\Login.xaml;Prozori\NoviPacijent.xaml;
+MainWindow.xaml;Prozori\Login.xaml;Prozori\NoviPacijent.xaml;Prozori\NoviPregled.xaml;Prozori\PreglediPacijenata.xaml;
 
 False
 

@@ -54,11 +54,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Modeli\BazaPacijenata.cs" />
+    <Compile Include="Modeli\BazaPregleda.cs" />
+    <Compile Include="Modeli\DBHelper.cs" />
+    <Compile Include="Modeli\Pacijent.cs" />
+    <Compile Include="Modeli\Pregled.cs" />
     <Compile Include="Prozori\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Prozori\NoviPacijent.xaml.cs">
       <DependentUpon>NoviPacijent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prozori\NoviPregled.xaml.cs">
+      <DependentUpon>NoviPregled.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prozori\PreglediPacijenata.xaml.cs">
+      <DependentUpon>PreglediPacijenata.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -77,6 +88,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Prozori\NoviPacijent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prozori\NoviPregled.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prozori\PreglediPacijenata.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

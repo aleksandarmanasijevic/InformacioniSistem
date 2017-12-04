@@ -5,32 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InformacioniSistem.Prozori"
         mc:Ignorable="d"
-        Title="NoviPacijent" Height="352.941" Width="492.437">
-    <Grid RenderTransformOrigin="0.133,-0.269">
-        <Label Content="Ime:" HorizontalAlignment="Left" Margin="24,29,0,0" VerticalAlignment="Top"/>
-        <Label Content="Prezime:" HorizontalAlignment="Left" Margin="24,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.56,-1.765"/>
-        <Label Content="Datum rođenja:" HorizontalAlignment="Left" Margin="24,81,0,0" VerticalAlignment="Top"/>
-        <Label Content="Mesto stanovanja:" HorizontalAlignment="Left" Margin="24,107,0,0" VerticalAlignment="Top"/>
-        <Label Content="Ulica i broj:" HorizontalAlignment="Left" Margin="24,133,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.139,-2.286"/>
-        <Button Content="Sačuvaj" HorizontalAlignment="Left" Margin="90,263,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btnSačuvaj"/>
-        <Button Content="Otkaži" HorizontalAlignment="Left" Margin="292,263,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btnOtkaži" Click="Button_Click"/>
-        <Label Content="Bračno stanje:" HorizontalAlignment="Left" Margin="24,159,0,0" VerticalAlignment="Top"/>
-        <Label Content="Telefon:" HorizontalAlignment="Left" Margin="24,214,0,0" VerticalAlignment="Top"/>
-        <Label Content="Pol:" HorizontalAlignment="Left" Margin="24,188,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Muško" HorizontalAlignment="Left" Margin="58,194,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Žensko" HorizontalAlignment="Left" Margin="148,194,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="59,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txtIme"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="76,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txtPrezime"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="75,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txtTelefon"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="98,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txtTelefon"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="135,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="txtMestoStanovanja"/>
-        <DatePicker HorizontalAlignment="Left" Margin="116,81,0,0" VerticalAlignment="Top" AutomationProperties.Name="dateDatumRodjenja"/>
-        <ComboBox HorizontalAlignment="Left" Margin="108,163,0,0" VerticalAlignment="Top" Width="120">
+        Title="Novi Pacijent" Height="461.339" Width="460.087">
+    <Grid RenderTransformOrigin="0.133,-0.269" Margin="0,1,0,-1">
+        <Label Content="Ime:" HorizontalAlignment="Left" Margin="24,8,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prezime:" HorizontalAlignment="Left" Margin="25,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.56,-1.765"/>
+        <Label Content="Datum rođenja:" HorizontalAlignment="Left" Margin="24,109,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mesto stanovanja:" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ulica i broj:" HorizontalAlignment="Left" Margin="25,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.139,-2.286"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="78,383,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btnSačuvaj" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="280,383,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btnOtkaži" Click="btnOtkazi_Click"/>
+        <Label Content="Bračno stanje:" HorizontalAlignment="Left" Margin="25,203,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefon:" HorizontalAlignment="Left" Margin="25,234,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.623,1.972"/>
+        <Label Content="Pol:" HorizontalAlignment="Left" Margin="25,271,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtnMusko" Content="Muško" HorizontalAlignment="Left" Margin="76,277,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtnZensko" Content="Žensko" HorizontalAlignment="Left" Margin="146,277,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIme" HorizontalAlignment="Left" Height="23" Margin="99,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtIme"/>
+        <TextBox x:Name="txtPrezime" HorizontalAlignment="Left" Height="23" Margin="99,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtPrezime"/>
+        <TextBox x:Name="txtTelefon" HorizontalAlignment="Left" Height="23" Margin="132,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtTelefon" RenderTransformOrigin="0.484,2.095"/>
+        <TextBox x:Name="txtUlicaIBroj" HorizontalAlignment="Left" Height="23" Margin="132,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtTelefon"/>
+        <TextBox x:Name="txtMestoStanovanja" HorizontalAlignment="Left" Height="23" Margin="132,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" AutomationProperties.Name="txtMestoStanovanja"/>
+        <DatePicker x:Name="dateDatumRodjenja" HorizontalAlignment="Left" Margin="132,109,0,0" VerticalAlignment="Top" AutomationProperties.Name="dateDatumRodjenja" Width="128"/>
+        <ComboBox x:Name="cmbBracnoStanje" HorizontalAlignment="Left" Margin="132,203,0,0" VerticalAlignment="Top" Width="160">
             <TabItem Content="Neoženjen/Neudata" Header="Neoženjen/Neudata"/>
             <TabItem Content="Oženjen/Udata" Header="Oženjen/Udata"/>
             <TabItem Content="Udovac/Udovica" Header="Udovac/Udovica"/>
             <TabItem Content="Razveden/Razvedena" Header="Razveden/Razvedena"/>
         </ComboBox>
+        <Label x:Name="label" Content="JMBG:" HorizontalAlignment="Left" Margin="25,77,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtJMBG" HorizontalAlignment="Left" Height="23" Margin="99,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
+        <Label x:Name="label1" Content="Alergija na:" HorizontalAlignment="Left" Margin="25,311,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtAlergija" HorizontalAlignment="Left" Height="52" Margin="132,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
 
     </Grid>
 </Window>
