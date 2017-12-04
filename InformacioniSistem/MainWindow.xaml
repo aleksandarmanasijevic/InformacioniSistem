@@ -11,7 +11,7 @@
         <Button x:Name="btnNoviPacijent" Content="Novi pacijent" Margin="0,18,16,0" VerticalAlignment="Top" Click="btnNoviPacijent_Click" Height="27" HorizontalAlignment="Right" Width="109"/>
         <Button x:Name="btnPregledKartona" Content="Pregled kartona" Margin="0,62,16,0" VerticalAlignment="Top"  Height="27" Click="btnPregledKartona_Click" HorizontalAlignment="Right" Width="109"/>
         <Button x:Name="btnIzlaz" Content="Izlaz" Margin="0,163,16,0" VerticalAlignment="Top"  Height="27" Click="btnIzlaz_Click" HorizontalAlignment="Right" Width="114" RenderTransformOrigin="0.535,-0.148"/>
-        <DataGrid x:Name="dataGrid"  VerticalAlignment="Top" Margin="0,0,148,0" Height="190">
+        <DataGrid x:Name="tblPacijenti"  VerticalAlignment="Top" Margin="0,0,148,0" Height="190">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Ime"/>
                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Prezime"/>

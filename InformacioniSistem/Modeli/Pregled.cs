@@ -8,18 +8,18 @@ namespace InformacioniSistem.Modeli
 {
     public class Pregled
     {
-        public Pacijent PregledaniPacijent { get; set; }
-        public DateTime DatumPregleda { get; set; }
+        public string JMBGPacijenta { get; set; }
+        public string DatumPregleda { get; set; }
         public string Anamneza { get; set; }
         public string Nalaz { get; set; }
         public string Status { get; set; }
         public string Terapija { get; set; }
         public string Dijagnoza { get; set; }
-        public DateTime KontrolaDana { get; set; }
+        public string KontrolaDana { get; set; }
         
-        public Pregled(Pacijent pregledaniPacijent, DateTime datumPregleda, string anamneza, string nalaz, string status, string terapija, string dijagnoza, DateTime kontrolaDana)
+        public Pregled(string pregledaniPacijent, string datumPregleda, string anamneza, string nalaz, string status, string terapija, string dijagnoza, string kontrolaDana)
         {
-            PregledaniPacijent = pregledaniPacijent;
+            JMBGPacijenta = pregledaniPacijent;
             DatumPregleda = datumPregleda;
             Anamneza = anamneza;
             Nalaz = nalaz;

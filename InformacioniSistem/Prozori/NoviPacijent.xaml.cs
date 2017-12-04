@@ -39,8 +39,8 @@ namespace InformacioniSistem.Prozori
             string bracnoStanje = cmbBracnoStanje.SelectedItem.ToString();
             bool? pol = rbtnMusko.IsChecked;
 
-            Pacijent p = new Pacijent( ime,  prezime,  jmbg,  datumRodjenja,  mestoStanovanja,  adresaStanovanja,  bracnoStanje,  telefon,  "MUSKI");
-            Console.WriteLine(p);
+            Pacijent p = new Pacijent(ime, prezime, jmbg, datumRodjenja, mestoStanovanja, adresaStanovanja, bracnoStanje, telefon, "MUSKI");
+            Console.WriteLine(p.ToString());
         }
 
         private void btnOtkazi_Click(object sender, RoutedEventArgs e)
